@@ -1,5 +1,5 @@
 import { CgWebsite } from "react-icons/cg";
-import ShimmerButton from './ui/ShimmerButton'
+import MagicButton from './MagicButton'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 
@@ -36,7 +36,7 @@ const Hero = () => {
           Hi, I&apos;m Muhammad Fabil, a junior web developer
         </p>
         <a href="#about">
-          <ShimmerButton 
+          <MagicButton
               title="FABIL" 
               icon={<CgWebsite />} 
               position={'right'} 
