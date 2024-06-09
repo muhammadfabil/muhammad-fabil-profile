@@ -35,7 +35,7 @@ const Hero = () => {
         
         </h2>
         <h2 className='uppercase tracking-widest text=xs text-center text-blue-100 max-w-'> 
-          Welcome to My profile and portofolio website
+          Welcome to My profile and portfolio website
         </h2>
         <div className='py-20' id='experiences'>
         <h1 className='heading'>
