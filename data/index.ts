@@ -219,24 +219,25 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "Pengurus Pusat Forum OSIS Jawa Barat Generasi 7",
-      desc: "Divisi Kominfo | Responsible for disseminating all FOJB information and media management",
-      className: "md:col-span-2",
-      thumbnail: "/fojb.png",
-    },
-    {
-      id: 6,
       title: "Program Pengenalan Linkungan Kampus ITERA 2022",
       desc: "Divisi Acara | responsible for managing the entire event as well as organizing the participant and committee plots in PPLK 2022",
       className: "md:col-span-2",
       thumbnail: "/pplk.jpg",
     },
+    
     {
-      id: 7,
+      id: 6,
       title: "International Conference on Science, Infrastructure Technology and Regional Development",
       desc: "Divisi Acara | Responsible for managing the entire event and organizing the entire series of events in ICoSITeR 2022",
       className: "md:col-span-2",
       thumbnail: "/icositer.png",
+    },
+    {
+      id: 7,
+      title: "Pengurus Pusat Forum OSIS Jawa Barat Generasi 7",
+      desc: "Divisi Kominfo | Responsible for disseminating all FOJB information and media management",
+      className: "md:col-span-2",
+      thumbnail: "/fojb.png",
     },
     {
       id: 8,
