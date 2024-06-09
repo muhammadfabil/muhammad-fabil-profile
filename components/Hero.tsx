@@ -73,7 +73,13 @@ const Hero = () => {
                                 Currently, I am a student at Dicoding Study Independent Program with a learning path in React & Back-End.
                             </h1>
                         </div>
-                        <img src="./profile.png" alt="Muhammad Fabil Profil Photo" width={400}/>
+                        <div className="flex-shrink-0 mt-4 md:mt-0">
+                        <img 
+                          src="./profile.png" 
+                          alt="Muhammad Fabil Profil Photo" 
+                          className="w-full max-w-xs md:max-w-md lg:max-w-lg h-auto rounded-lg sm:w-full" 
+                        />
+                      </div>
                     </div>
                 </Button>
             ))}
