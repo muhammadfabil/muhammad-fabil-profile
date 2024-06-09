@@ -41,7 +41,7 @@ const Hero = () => {
         <h1 className='heading'>
             Profile
         </h1>
-        <div className='w-full mt-12 
+        <div className='w-full mt-6 
         '>
             {Profile.map((card)=>(
                 <Button 
@@ -57,13 +57,21 @@ const Hero = () => {
                         
                         <div className='lg:ms-5'>
                             <h1 className='text-start text-xl
-                            md:text-2xl font-bold'>
-                                {card.title}
+                            md:text-2xl font-bold p2'>
+                                Muhammad Fabil
                             </h1>
                             <p className='text-start text-white-100
                             mt-3 font-semibold'>
-                                {card.desc}
+                                Undergraduate Informatics Student at Institut Teknologi Sumatera
                             </p>
+                            <p className='text-start text-white-100
+                            mt-3 font-semibold'>
+                               junior web developer with a high desire to learn and enjoy finding out new things about programming. 
+                            </p>
+                            <h1 className='text-start text-xl
+                            md:text-2xl font-bold mt-2 pt-2'>
+                                Currently, I am a student at Dicoding Study Independent Program with a learning path in React & Back-End.
+                            </h1>
                         </div>
                         <img src="./profile.png" alt="Muhammad Fabil Profil Photo" width={400}/>
                     </div>
@@ -73,9 +81,9 @@ const Hero = () => {
         </div>
 
     </div>
-        <a href="#about">
+        <a href="#about" >
           <MagicButton
-              title="FABIL" 
+              title="My interest and projects" 
               icon={<CgWebsite />} 
               position={'right'} 
               otherClasses={''} />

@@ -8,13 +8,14 @@ const RecentProjects = () => {
   return (
     <div className='py-20' id='projects'>
         <h1 className='heading'>
-            a small selection of {''}
+            some of my projects {''}
             <span className='text-purple'>recent project</span>
 
         </h1>
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8
         mt-10'>
             {projects.map(({id,title,des,img,iconLists,link})=>(
+                
                 <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]
                 flex items-center justify-center sm:w-[570px] w-[80vw]'>
                 <PinContainer title={link} href='https://github.com/ily3000n'>
@@ -46,9 +47,11 @@ const RecentProjects = () => {
                             ))}
                         </div>
                         <div className='flex justify-center items-center'>
-                            <p className='flex lg:text-xl md:text-xs text-sm text-purple'>check live site</p>
+                        <a href={link}><p className='flex lg:text-xl md:text-xs text-sm text-purple'>check live site</p></a>
+                            <a href={link}>
                             <FaLocationArrow className='ms-3'
                             color='#CBACF9'/>
+                            </a>
                         </div>
 
                     </div>
