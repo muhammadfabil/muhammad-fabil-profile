@@ -2,7 +2,8 @@ import { CgWebsite } from "react-icons/cg";
 import MagicButton from './MagicButton'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
-
+import { Button } from './ui/moving-border'
+import { Profile} from '@/data'
 const Hero = () => {
   return (
     <div className='pb-20 pt-36'>
@@ -24,17 +25,54 @@ const Hero = () => {
     <div className='flex justify-center relative my-20 z-10'>
       <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]
       flex flex-col items-center justify-center'>
-        <h2 className='uppercase tracking-widest text=xs text-center text-blue-100 max-w-80'>
-          dynamic web magic
-        </h2>
         <TextGenerateEffect 
          className='text-center text-[40px]
          md:text-5xl lg:text-6xl'
-         words='Muhammad FABILLL'
+         words='Muhammad FABIL'
         />
-        <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-          Hi, I&apos;m Muhammad Fabil, a junior web developer
-        </p>
+        <h2 className='uppercase tracking-widest text=xs text-center text-blue-100 max-w-80'>
+          Hi i&apos;m a junior web developer 
+        
+        </h2>
+        <h2 className='uppercase tracking-widest text=xs text-center text-blue-100 max-w-'> 
+          Welcome to My profile and portofolio website
+        </h2>
+        <div className='py-20' id='experiences'>
+        <h1 className='heading'>
+            Profile
+        </h1>
+        <div className='w-full mt-12 
+        '>
+            {Profile.map((card)=>(
+                <Button 
+                key={card.id}
+                duration={Math.floor(Math.random()*10000)
+                    +10000
+                }
+                borderRadius='1.75rem'
+                className='flex-1 text-white border-neutral-200 
+                dark:border-slate-800'>
+                    <div className='flex  items-center p-3 py-6 
+                    md:p-5 lg:p-10'>
+                        
+                        <div className='lg:ms-5'>
+                            <h1 className='text-start text-xl
+                            md:text-2xl font-bold'>
+                                {card.title}
+                            </h1>
+                            <p className='text-start text-white-100
+                            mt-3 font-semibold'>
+                                {card.desc}
+                            </p>
+                        </div>
+                        <img src="./profile.png" alt="Muhammad Fabil Profil Photo" width={400}/>
+                    </div>
+                </Button>
+            ))}
+
+        </div>
+
+    </div>
         <a href="#about">
           <MagicButton
               title="FABIL" 
