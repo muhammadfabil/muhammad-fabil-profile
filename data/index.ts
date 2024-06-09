@@ -89,7 +89,7 @@ export const navItems = [
     {
       id: 3,
       title: "Ecoland",
-      des: "A platform for land rental, and this is a final project for Studi Independed Program at Dicoding Indonesia",
+      des: "A platform for land rental, and this is a final project for Studi Independen Program at Dicoding Indonesia",
       img: "/p3.png",
       iconLists: ["/re.svg", "/tail.svg","/node.png"],
       link: "https://github.com/adrianhajdin/ai_saas_app",
