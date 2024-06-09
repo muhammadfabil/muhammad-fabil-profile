@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
         I will not stop to&nbsp; 
-        <span className="text-purple">improving&nbsp;</span>
+        <span className="text-cyan-500">improving&nbsp;</span>
         my programming skills and seek new knowledge to improve my capabilities
         </h1>
         <h2 className="text-white-200 md:mt-10 my-5 text-center text-xl">

@@ -6,7 +6,7 @@ const OrganizationExperiences = () => {
         <div className='py-20' id='experiences'>
             <h1 className='heading'>
             Organization and social&nbsp;
-                <span className='text-purple'>
+                <span className='text-cyan-500'>
                     Experiences
     
                 </span>

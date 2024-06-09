@@ -9,7 +9,7 @@ const RecentProjects = () => {
     <div className='py-20' id='projects'>
         <h1 className='heading'>
             some of my projects {''}
-            <span className='text-purple'>recent project</span>
+            <span className='text-cyan-500'>recent project</span>
 
         </h1>
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8
