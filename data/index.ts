@@ -102,6 +102,14 @@ export const navItems = [
       iconLists: ["/re.svg", "/tail.svg","/next.svg"],
       link: "https://muhammad-fabil-profile.vercel.app/",
     },
+    {
+      id: 5,
+      title: "Modifying a game : Whac a Mole",
+      des: "This is a project in an object-oriented programming course, I added level features, character selection, and increased challenges",
+      img: "/p5.png",
+      iconLists: ["/re.svg", "/tail.svg","/next.svg"],
+      link: "https://github.com/ily3000n/tubes-pbo",
+    },
   ];
   
   export const testimonials = [
