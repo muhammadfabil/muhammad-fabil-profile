@@ -107,7 +107,7 @@ export const navItems = [
       title: "Modifying a game : Whac a Mole",
       des: "This is a project in an object-oriented programming course, I added level features, character selection, and increased challenges",
       img: "/p5.png",
-      iconLists: ["/re.svg", "/tail.svg","/next.svg"],
+      iconLists: ["/py.svg"],
       link: "https://github.com/ily3000n/tubes-pbo",
     },
   ];
