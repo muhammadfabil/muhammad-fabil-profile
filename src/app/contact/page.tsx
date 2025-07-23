@@ -219,7 +219,7 @@ const ContactPage = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-foreground placeholder-foreground/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                 />
               </div>
 
@@ -234,7 +234,7 @@ const ContactPage = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-foreground placeholder-foreground/50 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  placeholder="john@example.com"
+                  placeholder="youremail@mail.com"
                 />
               </div>
 
