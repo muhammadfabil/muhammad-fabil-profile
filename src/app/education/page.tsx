@@ -32,7 +32,7 @@ const EducationPage = () => {
     return new Date(b.issueDate).getTime() - new Date(a.issueDate).getTime();
   });
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString : string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
@@ -40,12 +40,12 @@ const EducationPage = () => {
     });
   };
 
-  const formatYear = (dateString) => {
+  const formatYear = (dateString : string) => {
     const date = new Date(dateString);
     return date.getFullYear();
   };
 
-  const getGradeColor = (gpa) => {
+  const getGradeColor = (gpa : string) => {
     const numericGpa = parseFloat(gpa);
     if (numericGpa >= 3.5) return 'text-green-600 dark:text-green-400';
     if (numericGpa >= 3.0) return 'text-blue-600 dark:text-blue-400';
