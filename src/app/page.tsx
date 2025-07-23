@@ -424,37 +424,41 @@ export default function Home() {
 
       {/* CV Modal */}
       {isCvModalOpen && (
-        <div className="fixed inset-0 bg-none backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl w-full max-w-5xl h-[90vh] flex flex-col">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-2 sm:p-4">
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-xl w-full max-w-5xl h-[95vh] sm:h-[90vh] flex flex-col">
             {/* Modal Header */}
-            <div className="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-700">
-              <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
-                <FiFileText className="w-5 h-5" />
-                Curriculum Vitae - {personalData.name}
+            <div className="flex items-center justify-between p-2 sm:p-4 border-b border-slate-200 dark:border-slate-700 min-h-[60px]">
+              <h3 className="text-sm sm:text-lg font-semibold text-foreground flex items-center gap-1 sm:gap-2 flex-1 min-w-0">
+                <FiFileText className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span className="truncate">CV - {personalData.name}</span>
               </h3>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
+                {/* Download button - hidden on very small screens */}
                 <a
                   href={personalData.resume}
                   download
-                  className="px-3 py-1 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex items-center gap-1"
+                  className="hidden xs:flex px-2 sm:px-3 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors items-center gap-1"
                 >
                   <FiDownload className="w-3 h-3" />
-                  Download
+                  <span className="hidden sm:inline">Download</span>
                 </a>
+                {/* External link button - hidden on very small screens */}
                 <a
                   href={personalData.resume}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1 text-sm bg-slate-600 text-white rounded-md hover:bg-slate-700 transition-colors flex items-center gap-1"
+                  className="hidden sm:flex px-2 sm:px-3 py-1 text-xs sm:text-sm bg-slate-600 text-white rounded-md hover:bg-slate-700 transition-colors items-center gap-1"
                 >
                   <FiExternalLink className="w-3 h-3" />
-                  Open in New Tab
+                  <span className="hidden lg:inline">Open</span>
                 </a>
+                {/* Close button - always visible and properly sized for touch */}
                 <button
                   onClick={closeCvModal}
-                  className="p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
+                  className="p-2 sm:p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors min-w-[40px] min-h-[40px] flex items-center justify-center"
+                  aria-label="Close CV Modal"
                 >
-                  <FiX className="w-5 h-5" />
+                  <FiX className="w-5 h-5 sm:w-5 sm:h-5" />
                 </button>
               </div>
             </div>
@@ -466,6 +470,27 @@ export default function Home() {
                 className="w-full h-full border-0"
                 title="Curriculum Vitae"
               />
+            </div>
+            
+            {/* Mobile action buttons at bottom */}
+            <div className="flex sm:hidden border-t border-slate-200 dark:border-slate-700 p-2 gap-2">
+              <a
+                href={personalData.resume}
+                download
+                className="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <FiDownload className="w-4 h-4" />
+                Download CV
+              </a>
+              <a
+                href={personalData.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 px-3 py-2 text-sm bg-slate-600 text-white rounded-md hover:bg-slate-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <FiExternalLink className="w-4 h-4" />
+                Open in New Tab
+              </a>
             </div>
           </div>
         </div>
