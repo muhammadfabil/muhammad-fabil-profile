@@ -36,7 +36,7 @@ const ContactPage = () => {
     }
   };
 
-  const getSocialColor = (iconName) => {
+  const getSocialColor = (iconName : string) => {
     switch (iconName.toLowerCase()) {
       case 'github':
         return 'hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-800 dark:hover:text-gray-200';
