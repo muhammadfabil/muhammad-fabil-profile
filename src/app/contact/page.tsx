@@ -21,7 +21,7 @@ import {
 import { MdLocationCity } from 'react-icons/md';
 
 const ContactPage = () => {
-  const getSocialIcon = (iconName) => {
+  const getSocialIcon = (iconName : string) => {
     switch (iconName.toLowerCase()) {
       case 'github':
         return <BsGithub className="w-5 h-5" />;
