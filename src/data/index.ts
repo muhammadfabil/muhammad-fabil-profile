@@ -35,6 +35,8 @@ export const socialLinks = [
 export const skills = [
   // Frontend
   { name: "React.js", category: "Frontend", level: "Expert" },
+  { name: "Next.js", category: "Frontend", level: "Expert" },
+  { name: "TypeScript", category: "Frontend", level: "Expert" },
   { name: "HTML", category: "Frontend", level: "Expert" },
   { name: "CSS", category: "Frontend", level: "Expert" },
   { name: "JavaScript", category: "Frontend", level: "Advanced" },
