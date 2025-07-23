@@ -252,18 +252,12 @@ const EducationPage = () => {
                   )}
 
                   {/* Credential Link */}
-                  {cert.credentialUrl && (
+                  {cert.credentialId && (
                     <div className="pt-4 border-t border-slate-200 dark:border-slate-700">
-                      <a
-                        href={cert.credentialUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
-                      >
+                      <div className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm font-medium">
                         <BsClipboardCheck className="w-4 h-4" />
-                        View Credential
-                        <FiExternalLink className="w-3 h-3" />
-                      </a>
+                        Credential ID: <span className="font-mono">{cert.credentialId}</span>
+                      </div>
                     </div>
                   )}
                 </div>

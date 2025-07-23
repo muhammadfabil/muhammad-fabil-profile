@@ -11,7 +11,7 @@ const WorkPage = () => {
     return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
   });
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString : string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
@@ -19,7 +19,7 @@ const WorkPage = () => {
     });
   };
 
-  const getExperienceTypeIcon = (type) => {
+  const getExperienceTypeIcon = (type : string) => {
     switch (type) {
       case 'Full-time':
         return <MdWork className="w-5 h-5" />;
@@ -34,7 +34,7 @@ const WorkPage = () => {
     }
   };
 
-  const getExperienceTypeColor = (type) => {
+  const getExperienceTypeColor = (type : string) => {
     switch (type) {
       case 'Full-time':
         return 'bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300';

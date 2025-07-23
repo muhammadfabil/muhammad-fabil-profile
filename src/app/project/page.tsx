@@ -27,7 +27,7 @@ const ProjectsPage = () => {
   });
 
   // Group projects by category
-  const projectsByCategory = sortedProjects.reduce((acc, project) => {
+  const projectsByCategory = sortedProjects.reduce<Record<string, typeof projects[0][]>>((acc, project) => {
     if (!acc[project.category]) {
       acc[project.category] = [];
     }
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
     return acc;
   }, {});
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString : string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
@@ -43,7 +43,7 @@ const ProjectsPage = () => {
     });
   };
 
-  const getCategoryIcon = (category) => {
+  const getCategoryIcon = (category : string) => {
     switch (category) {
       case 'Web App Development':
         return <MdWeb className="w-5 h-5" />;
@@ -66,7 +66,7 @@ const ProjectsPage = () => {
     }
   };
 
-  const getCategoryColor = (category) => {
+  const getCategoryColor = (category : string) => {
     switch (category) {
       case 'Web App Development':
         return 'from-blue-400 to-indigo-600';
@@ -89,7 +89,7 @@ const ProjectsPage = () => {
     }
   };
 
-  const getStatusBadge = (status) => {
+  const getStatusBadge = (status : string) => {
     const baseClasses = "inline-flex items-center px-3 py-1 rounded-full text-xs font-medium";
     switch (status) {
       case 'Completed':

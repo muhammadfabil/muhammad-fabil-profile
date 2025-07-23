@@ -16,8 +16,8 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  const getSocialIcon = (iconName) => {
+
+  const getSocialIcon = (iconName : string) => {
     switch (iconName.toLowerCase()) {
       case 'github':
         return <BsGithub className="w-5 h-5" />;

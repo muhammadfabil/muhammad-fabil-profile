@@ -24,7 +24,8 @@ import {
 import { MdVolunteerActivism, MdGroups } from 'react-icons/md';
 
 const OrganizationPage = () => {
-  const [selectedPdf, setSelectedPdf] = useState(null);
+  type PdfModalData = { url: string; title: string } | null;
+  const [selectedPdf, setSelectedPdf] = useState<PdfModalData>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Sort organizations by start date (newest first)
@@ -37,7 +38,7 @@ const OrganizationPage = () => {
     return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
   });
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString : string) => {
     const date = new Date(dateString);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
@@ -45,12 +46,12 @@ const OrganizationPage = () => {
     });
   };
 
-  const formatYear = (dateString) => {
+  const formatYear = (dateString : string) => {
     const date = new Date(dateString);
     return date.getFullYear();
   };
 
-  const openPdfModal = (pdfUrl, title) => {
+  const openPdfModal = (pdfUrl : string, title : string) => {
     setSelectedPdf({ url: pdfUrl, title });
     setIsModalOpen(true);
   };
@@ -313,14 +314,7 @@ const OrganizationPage = () => {
                   )}
 
                   {/* Impact */}
-                  {volunteer.impact && (
-                    <div className="mb-4">
-                      <div className="flex items-center gap-2 text-sm font-medium text-green-600 dark:text-green-400">
-                        <FiTrendingUp className="w-4 h-4" />
-                        <span>{volunteer.impact}</span>
-                      </div>
-                    </div>
-                  )}
+                  {/* Impact */}
 
                   {/* Certificate Button */}
                   {volunteer.cert && (
