@@ -224,8 +224,8 @@ export const projects = [
     images: ["/fact.jpg"],
     status: "Completed",
     category: "Computer Vision",
-    startDate: "2023-11",
-    endDate: "2023-12",
+    startDate: "2024-11",
+    endDate: "2024-12",
     role: "Lead Developer",
     links: {
       github: "https://github.com/muhammadfabil/IF4021_Final_Term",
@@ -252,7 +252,7 @@ export const projects = [
     images: ["/ecoland.png"],
     status: "Completed",
     category: "Web App Development",
-    startDate: "2024-05",
+    startDate: "2024-04",
     endDate: "2024-06",
     role: "Full Stack Developer",
     links: {
