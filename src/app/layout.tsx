@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +42,7 @@ export default function RootLayout({
       >
         <Navbar />
         {/* Main content wrapper with left margin for sidebar */}
-        <div className="md:ml-64 min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+        <div className="ml-0 md:ml-64 min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
           <main>{children}</main>
           <Footer />
           <Analytics/>

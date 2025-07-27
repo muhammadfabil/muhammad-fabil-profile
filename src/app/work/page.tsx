@@ -51,7 +51,7 @@ const WorkPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-20 md:pt-12">
         
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -111,7 +111,7 @@ const WorkPage = () => {
                 </div>
 
                 {/* Content Card */}
-                <div className={`ml-16 md:ml-0 ${
+                <div className={`ml-12 md:ml-0 ${
                   index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                 } md:w-1/2`}>
                   <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 border border-blue-200 dark:border-slate-600 overflow-hidden">
